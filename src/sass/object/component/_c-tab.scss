@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.c-tab {
+  max-width: rem(500);
+  width: 100%;
+}
+
+.c-tab__nav {
+  display: flex;
+}
+
+.c-tab__item {
+  margin-right: rem(5);
+  background-color: #ccc;
+  padding: rem(10) rem(20);
+  border-top-left-radius: rem(10);
+  border-top-right-radius: rem(10);
+}
+
+.c-tab__item.is-active {
+  background-color: #333;
+  color: #fff;
+}
+
+.c-tab__contents {
+  border: 1px solid #ccc;
+  padding: rem(20);
+}
+
+.c-tab__content {
+  display: none;
+}
